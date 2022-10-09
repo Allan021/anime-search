@@ -12,11 +12,11 @@ const modalListener = event => {
   }
 
   event.preventDefault()
-  const videoUrl = linkElement.dataset.videoid
-
+  const { videoid } = linkElement.dataset
+  console.log(videoid)
   import(/* webpackChunkName: "modal" */ './open').then(
     ({ default: openVideoModal }) => {
-      openVideoModal(videoUrl)
+      openVideoModal(videoid)
     }
   )
 
