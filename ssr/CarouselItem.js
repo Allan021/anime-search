@@ -48,7 +48,7 @@ const CarouselItem = ({
   h(
     'div.carousel-item',
     h('img.carousel-item__img', {
-      alt: title,
+      alt: title || 'Anime',
       'data-src': imageUrl,
       'data-background-image': '/assets/carousel-item-placeholder.png',
     }),
