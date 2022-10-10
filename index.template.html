@@ -4,24 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Pagina para buscar animes" />
+    <title>PlatziVideo</title>
     <link rel="shortcut icon" href="/favicon.ico" />
 
     <!-- Preconnect and prefetch -->
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com/" />
     <link rel="preconnect" href="https://kitsu.io/" crossorigin />
-    <link rel="dns-prefetch" href="https://kitsu.io/" />
-    <link rel="prefetch" as="image" href="/assets/logo-platzi-video.png" />
+    <link
+      rel="preconnect"
+      href="https://googletagmanager.com/gtag"
+      crossorigin
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YQWK46TWJ6"
+    ></script>
+
+    <!--Syncronus JS -->
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-YQWK46TWJ6')
+    </script>
+
     <!-- Styles -->
+
     <link rel="stylesheet" href="/styles.css" />
     <link
       media="screen and (min-width: 600px)"
       rel="stylesheet"
       href="/desktop.css"
     />
-    <!-- Title -->
-    <title>PlatziVideo</title>
+
+    <!-- Prefect - Pre-render-->
+    <link rel="dns-prefetch" href="https://kitsu.io/" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/" />
+    <link rel="prefetch" as="image" href="/assets/logo-platzi-video.png" />
+
+    <!-- Seo Meta tags -->
+    <meta name="description" content="Pagina para buscar animes" />
+    <meta name="keywords" content="anime, animes, buscar anime" />
+    <meta name="author" content="Allan Aceituno" />
+
+    <meta property="og:title" content="Anime Search" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://anime-search-fast.netlify.app/" />
+    <meta
+      property="og:image"
+      content="https://anime-search-fast.netlify.app/assets/logo-platzi-video.png"
+    />
   </head>
   <body>
     <header class="header">
@@ -88,7 +125,7 @@
       </p>
     </footer>
 
-    <!-- Scripts -->
+    <!--Async Scripts-->
     <script async src="dist/main.bundle.js"></script>
     <!-- Fonts -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
