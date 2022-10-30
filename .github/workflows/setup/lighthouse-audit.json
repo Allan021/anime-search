@@ -5,7 +5,7 @@
     },
     "assert": {
       "assertions": {
-        "categories:performance": ["error", { "minScore": 1.1 }],
+        "categories:performance": ["error", { "minScore": 0.9 }],
         "first-contentful-paint": ["error", { "maxNumericValue": 1500 }],
 
         "resource-summary:font:count": ["error", { "maxNumericValue": 1 }],
