@@ -9,7 +9,7 @@
         "first-contentful-paint": ["error", { "maxNumericValue": 1500 }],
 
         "resource-summary:font:count": ["error", { "maxNumericValue": 1 }],
-        "resource-summary:script:size": ["error", { "maxNumericValue": 281126 }]
+        "resource-summary:script:size": ["error", { "maxNumericValue": 280000 }]
       }
     }
   }
